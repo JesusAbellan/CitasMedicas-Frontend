@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="card-wrapper">
+    <mat-card *ngFor="let item of team">
+        <mat-card-header>
+            <div class="mat-card-header-text">
+                <mat-card-title>{{item.name}}</mat-card-title>
+                <mat-card-subtitle>
+                    Especialidad: {{item.area}}
+                </mat-card-subtitle>
+            </div>
+        </mat-card-header>
+        <img mat-card-image style="width: 150px; border-radius: 50%;" [src]="item.pic">
+        <mat-card-content>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

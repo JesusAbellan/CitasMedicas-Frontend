@@ -1,0 +1,27 @@
+<mat-toolbar class="header" color="primary">
+    <mat-toolbar-row>
+        <section class="mat-typography">
+            <h1>Citas Médicas</h1>
+            <mat-divider style="border-width: 0.25rem;"></mat-divider>
+        </section>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <mat-nav-list class="list-horizontal"> 
+            <mat-list-item *ngFor="let i of navbarItems; last as last" [routerLink]="'/' + i.route" [routerLinkActive]="['is-active']">
+               <label>{{i.name}}</label> 
+               <mat-divider [vertical]="true" [inset]="true" style="height: 2rem; border-width: 0.15rem;" *ngIf="!last"></mat-divider>
+            </mat-list-item>
+            
+         </mat-nav-list>
+         
+        <span class="spacer"></span>
+        <div>
+            <a [routerLink]="'/signup'">Registro</a>
+            <label> / </label>
+            <a [routerLink]="'/login'">Inicio de sesión</a>
+        </div>
+        <button mat-icon-button aria-label="Example icon button with a menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+@use "@angular/material" as mat;
+
+$primary-palette: mat.define-palette(mat.$indigo-palette);
+
+.calendar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    background-color: mat.get-color-from-palette($primary-palette, 'lighter');
+}

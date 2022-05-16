@@ -1,0 +1,16 @@
+[{
+    "name": "Inicio",
+    "route": "home"
+},
+{
+    "name": "Nuestro equipo",
+    "route": "team"
+},
+{
+    "name": "Noticias",
+    "route": "news"
+},
+{
+    "name": "Citas disponibles",
+    "route": "new-dates"
+}]

@@ -1,0 +1,31 @@
+@use "@angular/material" as mat;
+
+$primary-palette: mat.define-palette(mat.$indigo-palette);
+
+.list-horizontal {
+    padding: 0;
+    .mat-list-item {
+        display: inline-block;
+        color: white;
+        height: auto;
+        width: auto;
+    }
+}
+
+.is-active{
+    background-color: mat.get-color-from-palette($primary-palette, 'darker');
+}
+.is-active:hover{
+    background-color: mat.get-color-from-palette($primary-palette, 'darker');
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    font-size: 1.2em;
+    background-color:  mat.get-color-from-palette($primary-palette, 'darker');
+}
+a:visited {
+    color: white;
+}

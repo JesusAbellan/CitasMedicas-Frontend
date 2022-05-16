@@ -1,0 +1,132 @@
+<app-navbar></app-navbar>
+<div class="body">
+    <h1 style="text-align: center;">¡Bienvenido a Clinica Privada Genérica&trade;!</h1>
+    <br>
+
+    <div>
+        <h2>Índice</h2>
+        <mat-nav-list>
+            <mat-divider style="border-width: 0.25rem;"></mat-divider>
+            <mat-list-item (click)="scroll(sobreNosotros)">Sobre nosotros</mat-list-item>
+            <mat-divider style="border-width: 0.25rem;"></mat-divider>
+            <mat-list-item  (click)="scroll(nuestrosCentros)">Nuestros centros</mat-list-item>
+            <mat-divider  style="border-width: 0.25rem;"></mat-divider>
+            <mat-list-item  (click)="scroll(especialidades)">Especialidades</mat-list-item>
+            <mat-divider style="border-width: 0.25rem;"></mat-divider>
+        </mat-nav-list>
+    </div>
+    <br>
+    
+    <div #sobreNosotros>
+        <h2>Sobre nosotros</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tellus commodo, facilisis risus at,
+            vestibulum nunc. Nam eu quam sit amet erat consectetur commodo. Etiam sit amet nibh suscipit, congue tellus
+            et, fermentum nisl. Donec pellentesque tellus in lobortis commodo. In hac habitasse platea dictumst. Nunc
+            sollicitudin nisi at finibus porta. Vestibulum blandit tempor leo ut hendrerit. In hac habitasse platea
+            dictumst. Quisque sit amet imperdiet tellus, a accumsan dui. Integer ultrices ornare est id congue.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at lacinia
+            quam. Curabitur arcu ante, dictum sed porta vitae, ullamcorper ut lorem.
+        </p>
+        <p>
+            Proin fermentum ligula sed ornare vehicula. Integer odio diam, aliquam sit amet scelerisque sit amet,
+            sollicitudin nec urna. Etiam a commodo augue. Nunc dignissim aliquam enim vel tristique. Donec facilisis
+            euismod mattis. Nullam nec ante eleifend lorem imperdiet elementum sed sit amet mi. Cras et ultrices massa.
+            Aliquam erat volutpat. Praesent elit purus, sagittis molestie eros sed, suscipit porta nisl. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida id lorem eget
+            molestie. Etiam eget efficitur est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+        </p>
+        <p>
+            Aliquam laoreet quis justo ut ornare. Quisque commodo neque et justo pellentesque accumsan. Duis sed aliquet
+            erat. Vestibulum dictum ut lacus quis facilisis. Ut in nunc sapien. Duis et quam tortor. Integer erat
+            tortor, vulputate vel aliquet ut, semper quis diam. Nam at consectetur nibh.
+        </p>
+        <p>
+            Morbi aliquet condimentum magna, sit amet luctus nunc viverra non. Vivamus eu felis ullamcorper nulla luctus
+            sodales. Vestibulum vitae eros nec ligula bibendum interdum vel in erat. Sed mattis arcu et velit malesuada
+            tempor. In nec nulla eget est tincidunt semper et id nulla. Ut pellentesque nibh augue, in pharetra mauris
+            luctus quis. Curabitur tristique consectetur urna, sit amet varius tellus laoreet in. Nullam vel nulla eu
+            erat aliquet pulvinar quis in orci.
+        </p>
+        <p>
+            Nulla aliquam dui sed magna sagittis viverra. Phasellus blandit vestibulum facilisis. Nunc tristique magna
+            at nunc pellentesque tincidunt. Mauris sed molestie lectus. Sed porta sodales auctor. Nulla quis malesuada
+            nisi, vel fringilla lacus. Phasellus varius ullamcorper ante varius tincidunt. Sed mattis cursus nulla.
+            Donec consectetur vitae lorem sed iaculis. Nulla vestibulum ultrices libero at convallis. Sed ex enim,
+            fringilla et blandit a, condimentum nec orci.
+        </p>
+    </div>
+
+    <div #nuestrosCentros>
+        <h2>Nuestros centros</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tellus commodo, facilisis risus at,
+            vestibulum nunc. Nam eu quam sit amet erat consectetur commodo. Etiam sit amet nibh suscipit, congue tellus
+            et, fermentum nisl. Donec pellentesque tellus in lobortis commodo. In hac habitasse platea dictumst. Nunc
+            sollicitudin nisi at finibus porta. Vestibulum blandit tempor leo ut hendrerit. In hac habitasse platea
+            dictumst. Quisque sit amet imperdiet tellus, a accumsan dui. Integer ultrices ornare est id congue.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at lacinia
+            quam. Curabitur arcu ante, dictum sed porta vitae, ullamcorper ut lorem.
+        </p>
+        <p>
+            Proin fermentum ligula sed ornare vehicula. Integer odio diam, aliquam sit amet scelerisque sit amet,
+            sollicitudin nec urna. Etiam a commodo augue. Nunc dignissim aliquam enim vel tristique. Donec facilisis
+            euismod mattis. Nullam nec ante eleifend lorem imperdiet elementum sed sit amet mi. Cras et ultrices massa.
+            Aliquam erat volutpat. Praesent elit purus, sagittis molestie eros sed, suscipit porta nisl. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida id lorem eget
+            molestie. Etiam eget efficitur est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+        </p>
+        <p>
+            Aliquam laoreet quis justo ut ornare. Quisque commodo neque et justo pellentesque accumsan. Duis sed aliquet
+            erat. Vestibulum dictum ut lacus quis facilisis. Ut in nunc sapien. Duis et quam tortor. Integer erat
+            tortor, vulputate vel aliquet ut, semper quis diam. Nam at consectetur nibh.
+        </p>
+        <p>
+            Morbi aliquet condimentum magna, sit amet luctus nunc viverra non. Vivamus eu felis ullamcorper nulla luctus
+            sodales. Vestibulum vitae eros nec ligula bibendum interdum vel in erat. Sed mattis arcu et velit malesuada
+            tempor. In nec nulla eget est tincidunt semper et id nulla. Ut pellentesque nibh augue, in pharetra mauris
+            luctus quis. Curabitur tristique consectetur urna, sit amet varius tellus laoreet in. Nullam vel nulla eu
+            erat aliquet pulvinar quis in orci.
+        </p>
+        <p>
+            Nulla aliquam dui sed magna sagittis viverra. Phasellus blandit vestibulum facilisis. Nunc tristique magna
+            at nunc pellentesque tincidunt. Mauris sed molestie lectus. Sed porta sodales auctor. Nulla quis malesuada
+            nisi, vel fringilla lacus. Phasellus varius ullamcorper ante varius tincidunt. Sed mattis cursus nulla.
+            Donec consectetur vitae lorem sed iaculis. Nulla vestibulum ultrices libero at convallis. Sed ex enim,
+            fringilla et blandit a, condimentum nec orci.
+        </p>
+    </div>
+
+    <div #especialidades>
+        <h2>Especialidades</h2>
+        <mat-grid-list cols="3" rowHeight="3:1" gutterSize="1em">
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-grid-tile-header>Traumatologia</mat-grid-tile-header>
+                Esto es una prueba
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+</div>

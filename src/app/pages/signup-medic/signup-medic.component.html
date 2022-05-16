@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+<div style="margin-top:1em; margin-left: auto; margin-right: auto; text-align: center;">
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>DNI</mat-label>
+            <input matInput placeholder="12345678A" [formControl]="dni" required>
+            <mat-error *ngIf="dni.invalid">{{getErrorMessageDNI()}}</mat-error>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre completo</mat-label>
+            <input matInput placeholder="John Doe" [formControl]="name" required>
+            <mat-error *ngIf="name.invalid">{{getErrorMessageRequired()}}</mat-error>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="email@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Especialidad</mat-label>
+            <mat-select>
+                <mat-option value="one">First option</mat-option>
+                <mat-option value="two">Second option</mat-option>
+            </mat-select>
+            <mat-error *ngIf="speciality.invalid">{{getErrorMessageRequired()}}</mat-error>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" placeholder="password" [formControl]="pwd" required>
+            <mat-error *ngIf="pwd.invalid">{{getErrorMessagePWD()}}</mat-error>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Repetir contraseña</mat-label>
+            <input matInput type="password" placeholder="password"  [formControl]="pwd2" required>
+            <mat-error *ngIf="pwd.invalid">{{getErrorMessagePWD()}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <button mat-raised-button color="primary" (click)="submit()">Registrarse</button>
+</div>

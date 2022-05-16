@@ -1,0 +1,22 @@
+@use "@angular/material" as mat;
+
+$primary-palette: mat.define-palette(mat.$indigo-palette);
+
+.card-wrapper {
+    margin-top: 1em;
+}
+
+mat-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    background-color:  mat.get-color-from-palette($primary-palette, 'lighter');
+    width: 30em;
+    box-shadow: 0.5em 0.5em #88888855!important;
+    text-align: center;
+    align-items: center;
+}
+
+.mat-card-header-text{
+    width: 100%;
+}
